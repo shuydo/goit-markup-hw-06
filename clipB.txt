@@ -1,0 +1,28 @@
+<!-- <label>
+            Имя -->
+            <label for="name">Имя</label>
+            <input type="text" name="name" id  ="name" />
+          <!-- </label>
+          <label>
+            Телефон
+           -->
+           <label for="tel">Телефон</label>
+            <input type="text" name="phone" id="tel"/>
+          <!-- </label>
+          <label>
+            Почта
+            <input type="email" name="email" />
+          </label>
+          <textarea
+            name="comment"
+            rows="10"
+            cols="50"
+            placeholder="Введите текст"
+          ></textarea>
+          <label>
+            <input type="checkbox">
+          </label>
+          <button type="button" class="button" data-modal-open>
+            Отправить
+          </button>
+           -->

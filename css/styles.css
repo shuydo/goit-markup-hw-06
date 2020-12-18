@@ -380,9 +380,7 @@ address {
   fill: #afb1b8;
   border-radius: 50%;
 }
-.soc-list-link {
-  
-}
+
 /* .soc-list-link */
 .soc-list-link {
   display: flex;
@@ -655,3 +653,6 @@ address {
   pointer-events: none;
 }
 /* -------------------End BackDrop */
+textarea{
+  resize: none;
+}
