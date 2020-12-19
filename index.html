@@ -426,21 +426,27 @@
 
       <form class="form js-speaker-form" autocomplete="off">
         <div class="form-field">
-          <label for="name">Имя</label>
-          <input class="form-input" type="text" name="name" id="name" placeholder="Smith John" autofocus />
+          <!--placeholder="Smith John" autofocus-->
+          <input class="form-input" type="text" name="name" id="name" placeholder=" "/>
+          <label class="form-label" for="name">Имя</label>
+          <span class="icon"></span>
         </div>
         <!-- autofocus not work? modal? -->
         <div class="form-field">
-          <label for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel" placeholder="xxx-xxx-xx-xx" />
+          <input class="form-input" type="tel" name="tel" id="tel" placeholder=" "/>
+          <label class="form-label" for="tel">Телефон</label>          
+          <span class="icon"></span>
+        
         </div>
 
-        <div class="form-field">
-          <label for="mail">Почта</label>
-          <input type="email" name="mail" id="mail" autocomplete="on" placeholder="my@mail.com" />
-        </div>
+        <div class="form-field">          
+          <input class="form-input" type="email" name="mail" id="mail" placeholder=" "/>
+          <label class="form-label" for="mail">Почта</label>
+          <span class="icon"></span>
+        
+        </div> 
 
-        <div role="groupe" class="group">
+<!--        <div role="groupe" class="group">
           <h2 class="group-title">Оставьте свои данные, мы перезвоним</h2>
 
           <ul class="topic-options">
@@ -501,7 +507,7 @@
         <div class="form-field">
           <input type="checkbox" name="policy" id="policy">
           <label for="policy">Соглашаюсь на всё, за еду</label>
-        </div>
+        </div> -->
         <br />
         <button type="submit">Отправить</button>
       </form>
