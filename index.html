@@ -422,57 +422,87 @@
           <use href="./images/sprite2.svg#c"></use>
         </svg>
       </button>
-      <!-- <h2>Оставьте свои данные, мы перезвоним</h2> -->
+      <!-- <b>Оставьте свои данные, мы перезвоним</b> -->
 
-      <form class="js-speaker-form" autocomplete="off" >
-        <label for="name">Имя</label>
-        <input type="text" name="name" id="name" autofocus />
-                                          <!-- autofocus not work? modal? -->
-        </br>
-        <label for="tel">Телефон</label>
-        <input type="tel" name="tel" id="tel" />
-        <br />
-        <label for="mail">Почта</label>
-        <input type="email" name="mail" id="mail" autocomplete="on" />
-        <br />
-        <div role="groupe">
-          <input type="checkbox" name="topic" value="html" id="html" >
-          <label for="html">html</label>
-
-          <input type="checkbox" name="topic" value="css" id="css" >
-          <label for="css">css</label>
-
-          <input type="checkbox" name="topic" value="js" id="js">
-          <label for="js">js</label>
+      <form class="form js-speaker-form" autocomplete="off">
+        <div class="form-field">
+          <label for="name">Имя</label>
+          <input class="form-input" type="text" name="name" id="name" placeholder="Smith John" autofocus />
         </div>
-        <div role="groupe">
-          <input type="radio" name="xp" value="junior" id="junior" >
-          <label for="junior">junior</label>
-
-          <input type="radio" name="xp" value="middle" id="middle">
-          <label for="middle">middle</label>
-
-          <input type="radio" name="xp" value="senior" id="senior">
-          <label for="senior">senior</label>
+        <!-- autofocus not work? modal? -->
+        <div class="form-field">
+          <label for="tel">Телефон</label>
+          <input type="tel" name="tel" id="tel" placeholder="xxx-xxx-xx-xx" />
         </div>
-        <label for="date">Дата доклада</label>
-        <input 
-          type="datetime-local"
-          name="date" 
-          id="date"
-          min="2020-12-20T12:30"
-          max="2020-12-25T12:30"
-        />
+
+        <div class="form-field">
+          <label for="mail">Почта</label>
+          <input type="email" name="mail" id="mail" autocomplete="on" placeholder="my@mail.com" />
+        </div>
+
+        <div role="groupe" class="group">
+          <h2 class="group-title">Оставьте свои данные, мы перезвоним</h2>
+
+          <ul class="topic-options">
+            <li>
+              <input type="checkbox" name="topic" value="html" id="html">
+              <label for="html">HTML</label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="topic" value="css" id="css">
+              <label for="css">CSS</label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="topic" value="js" id="js">
+              <label for="js">JavaScript</label>
+            </li>
+          </ul>
+        </div>
+
+        <div role="groupe" class="group">
+          <ul class="xp-options">
+            <li>
+              <input type="radio" name="xp" value="junior" id="junior">
+              <label for="junior">junior</label>
+            </li>
+            <li>
+              <input type="radio" name="xp" value="middle" id="middle">
+              <label for="middle">middle</label>
+            </li>
+            <li>
+              <input type="radio" name="xp" value="senior" id="senior">
+              <label for="senior">senior</label>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="form-field">
+          <label for="date">Дата доклада</label>
+          <input type="date" name="date" id="date" class="date"/>
+        </div>
+
+        <div class="form-field">
+          <label for="pdf">Load pdf</label>
+          <input type="file" name="pdf" id="pdf" />
+        </div>
+
+        <div class="form-field">
+          <label for="comment">Оставьте коментарий</label>
+          <textarea class="comment"
+            name="comment" 
+            id="comment"
+            rows="8"
+            placeholder="Уточните детали доклада"
+            ></textarea>
+        </div>
+        <div class="form-field">
+          <input type="checkbox" name="policy" id="policy">
+          <label for="policy">Соглашаюсь на всё, за еду</label>
+        </div>
         <br />
-        <label for="pdf">Load pdf</label>
-        <input type="file" name="pdf" id="pdf" />
-        <br />
-        <label for="Comment">Comments</label>
-        <textarea name="" id="Comments" rows="8"></textarea>
-        <br />        
-        <input type="checkbox" name="" id="policy">
-        <label for="policy">Agree</label>
-        <br />        
         <button type="submit">Отправить</button>
       </form>
     </div>
