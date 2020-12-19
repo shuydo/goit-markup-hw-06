@@ -710,7 +710,7 @@ textarea{
       text-align: right;
       
     } */
-.icon{
+.form-icon{
   position: absolute;
   top: 50%;
   left: 19px;
@@ -723,7 +723,7 @@ textarea{
   background-color: tomato;  
 }
 
-.form-input:focus~.icon{
+.form-input:focus~.form-icon{
   background-color: blue;
 }
 .form:focus-within{
