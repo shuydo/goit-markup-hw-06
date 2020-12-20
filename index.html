@@ -420,39 +420,124 @@
       <button type="button" class="close-btn" data-modal-close>
         <svg class="cross" width="18" height="18">
           <use href="./images/sprite2.svg#c"></use>
+          <!-- <use href="./images/sprite3.svg#icon-c"></use> -->
+<!-- <use href="../"></use> -->
         </svg>
       </button>
-      <!-- <b>Оставьте свои данные, мы перезвоним</b> -->
 
-      <form class="form js-speaker-form" autocomplete="off">
-        <div class="form-field">
-          <!--placeholder="Smith John" autofocus-->
+      <form class="form" autocomplete="off">
+        <h2>Оставьте свои данные, мы вам перезвоним</h2>
+        
+        <label class="form-label">
+          Имя
+          <div class="form-field">
+            <input type="text" class="form-input" name="name" placeholder=" " />
+            <span class="icon"></span>
+          </div>
+        </label>
+  
+        <label class="form-label">
+          Телефон
+          <div class="form-field">
+            <input type="tel" class="form-input" name="phone" placeholder=" " />
+            <span class="icon"></span>
+          </div>
+        </label>
+  
+        <label class="form-label">
+          Почта
+          <div class="form-field">
+            <input type="email" class="form-input" name="mail" placeholder=" " />
+            <span class="icon"></span>
+          </div>
+        </label>
+  
+        <label class="form-label">
+          Комментарий
+          <div class="form-field">
+            <textarea class="message" 
+              rows="5"
+              name="message"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+        </label>
+        
+        <label class="accept">
+          <input             
+            type="checkbox" 
+            name="accept" 
+            value="accept"
+            class="accept-input visually-hidden">
+          <span>
+            Соглашаюсь с рассылкой и принимаю 
+            <a href="#">Условия договора</a>
+          </span>
+        </label>
+  
+        <button class="button">Отправить</button>
+      </form>
+
+        <!-- <div class="form-field">
           <input class="form-input" type="text" name="name" id="name" placeholder=" "/>
           <label class="form-label" for="name">Имя</label>
           <span class="form-icon"></span>
         </div>
-        <!-- autofocus not work? modal? -->
         <div class="form-field">
           <input class="form-input" type="tel" name="tel" id="tel" placeholder=" "/>
           <label class="form-label" for="tel">Телефон</label>          
-          <span class="form-icon"></span>
-        
+          <span class="form-icon"></span>    
         </div>
-
         <div class="form-field">          
           <input class="form-input" type="email" name="mail" id="mail" placeholder=" "/>
           <label class="form-label" for="mail">Почта</label>
           <span class="form-icon"></span>
-        
-        </div> 
+        </div>  -->
 
-<!--        <div role="groupe" class="group">
-          <h2 class="group-title">Оставьте свои данные, мы перезвоним</h2>
+        <!-- <div class="form-field">
+          <label for="comment">Комментарий</label>
+          <textarea class="comment"
+            name="comment" 
+            id="comment"
+            rows="8"
+            placeholder="Введите текст"
+            ></textarea>
+        </div> -->
 
+       <!-- <div role="groupe" class="group">
           <ul class="topic-options">
             <li>
-              <input type="checkbox" name="topic" value="html" id="html">
-              <label for="html">HTML</label>
+              <label class="label">
+                <input class="checkbox"
+                  type="checkbox"
+                  name="topic" 
+                  value="html"
+                >
+                <span class="icon"></span>
+                HTML
+              </label>
+            </li>
+            <li>
+              <label class="label">
+                <input class="checkbox"
+                  type="checkbox"
+                  name="topic" 
+                  value="html"
+                >
+                <span class="icon"></span>
+                CSS
+              </label>
+            </li>
+            <li>
+              <label class="label">
+                <input class="checkbox"
+                  type="checkbox"
+                  name="topic" 
+                  value="html"
+                >
+                <span class="icon"></span>
+                JavaScript
+              </label>
             </li>
 
             <li>
@@ -465,9 +550,9 @@
               <label for="js">JavaScript</label>
             </li>
           </ul>
-        </div>
+        </div> -->
 
-        <div role="groupe" class="group">
+        <!-- <div role="groupe" class="group">
           <ul class="xp-options">
             <li>
               <input type="radio" name="xp" value="junior" id="junior">
@@ -495,21 +580,13 @@
           <input type="file" name="pdf" id="pdf" />
         </div>
 
-        <div class="form-field">
-          <label for="comment">Оставьте коментарий</label>
-          <textarea class="comment"
-            name="comment" 
-            id="comment"
-            rows="8"
-            placeholder="Уточните детали доклада"
-            ></textarea>
-        </div>
+        
         <div class="form-field">
           <input type="checkbox" name="policy" id="policy">
           <label for="policy">Соглашаюсь на всё, за еду</label>
-        </div> -->
+        </div>
         <br />
-        <button type="submit">Отправить</button>
+        <button type="submit">Отправить</button> -->
       </form>
     </div>
   </div>
