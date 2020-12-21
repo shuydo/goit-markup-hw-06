@@ -484,15 +484,15 @@ address {
   width: 206px;
   height: 80px;
   margin-left: 70px;
-  margin-top: 72px;
+  margin-top: 12px;
 }
-.join-header {
+.join-header,.subscribe label {
   font-weight: bold;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
 }
 .soc-list-link {
   background-color: rgba(255, 255, 255, 0.1);
@@ -503,6 +503,51 @@ address {
   margin-top: 20px;
   fill: #afb1b8;
 }
+/* ------------------- ПОДПИСКА --------------------*/
+.subscribe{
+  display: flex;
+
+  width: 570px;
+  height: 86px;
+  margin-left: 93px;
+
+  align-items: flex-end;
+  justify-content: space-between;
+
+  /* outline: 1px solid white; */
+}
+.subscribe label{
+  margin-bottom: 20px;
+  /* outline: 1px solid white; */
+}
+.subscribe-email{
+  display: flex;
+  flex-direction: column;
+  
+  /* justify-content: space-between; */
+}
+.subscribe input{
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  background-color  : #2f303a;
+  /* outline: none; */
+  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  line-height: calc(20/16);
+}
+.subscribe button{
+  padding-left: 29px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* margin: 30px auto 0; */
+  color: #fff;
+  background-color: var(--accent-color);
+}
+
 /*---------------------End footer--------------*/
 /* ============================================== */
 /*---------------------Потрфолио---------------*/
@@ -652,9 +697,7 @@ address {
   pointer-events: none;
 }
 /* -------------------End BackDrop & modal*/
-textarea {
-  resize: none;
-}
+
 /*------------------------- FORM -----------*/
 .form {
   /* width: 500px; */
@@ -666,35 +709,16 @@ textarea {
 }
 
 .form h2 {
-  /* width: 528px; */
-  /* display: block; */
-
   margin-bottom: 12px;
-  /* padding: 20px; */
-
-  /* padding-left: 10px; */
-  /* margin-left: auto; */
-  /* margin-right: auto; */
-  /* float: left; */
-  /* font-family: Roboto; */
-  /* font-style: normal; */
+ 
   font-weight: bold;
   font-size: 20px;
   line-height: calc(23 / 20);
   letter-spacing: 0.03em;
   color: #212121;
   text-align: center;
-  /* border:1px solid clack; */
   /* outline: 1px solid black; */
 }
-
-/* -----------------start from out --------------------*/
-/* .form {
-  padding: 20px;
-  margin: 2px;
-  width: 300px;
-  outline: 1px solid olive;
-} */
 
 .form-field {
   position: relative;
@@ -709,7 +733,6 @@ textarea {
   font-size: 12px;
   line-height: CALC(14/12);
   /* identical to box height */
-
   letter-spacing: 0.01em;
 
   color: #757575;
@@ -766,6 +789,9 @@ textarea {
 .form-input:not(:placeholder-shown) + .form-label {
   transform: translateY(-50px);
 } */
+textarea {
+  resize: none;
+}
 .message {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
