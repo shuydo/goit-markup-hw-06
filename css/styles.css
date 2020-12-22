@@ -541,6 +541,7 @@ address {
   border-radius: 4px;
 
   line-height: calc(20 / 16);
+  color:#fff;
 }
 .subscribe button {
   padding: 27px;
@@ -875,8 +876,9 @@ address {
   color: var(--accent-color);
   border-bottom: 1px solid var(--accent-color);
 }
-textarea::-webkit-input-placeholder {
+.subscribe input::placeholder {
   color: rgba(117, 117, 117, 0.5);
+  /* color:red */
 }
 .form button {
   padding: 10px 55px;
