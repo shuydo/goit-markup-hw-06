@@ -702,6 +702,9 @@ address {
   visibility: hidden;
   pointer-events: none;
 }
+.close-btn:hover {
+  fill: var(--accent-color);
+}
 /* -------------------End BackDrop & modal*/
 
 /*------------------------- FORM -----------*/
@@ -820,9 +823,38 @@ address {
 
   /* outline: 1px solid black; */
 }
+
+ 
+.custom-check-box {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  /* margin-right: 5px; */
+
+  /* border: 2px solid #2a2a2a;
+  border-radius: 4px; */
+
+  background-image: url('../images/box.svg');
+
+  /* transition: transform 250ms linear; */
+}
+
+
+.accept-input:checked + .custom-check-box {
+  /* transform: scale(1.2); */
+  border-color: transparent;
+  background-color: var(--accent-color);
+  background-image: url('../images/mark.svg');
+  background-size: contain;
+  background-origin: border-box;
+}
+
 .accept span {
   font-size: 14px;
   line-height: calc(24 / 14);
+
+  color:#757575;
+  vertical-align: middle;
 
   /* outline: 1px solid black; */
 }
