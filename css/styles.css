@@ -486,7 +486,8 @@ address {
   margin-left: 70px;
   margin-top: 12px;
 }
-.join-header,.subscribe label {
+.join-header,
+.subscribe label {
   font-weight: bold;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -504,48 +505,53 @@ address {
   fill: #afb1b8;
 }
 /* ------------------- ПОДПИСКА --------------------*/
-.subscribe{
+.subscribe {
   display: flex;
 
   width: 570px;
   height: 86px;
   margin-left: 93px;
+  margin-top: 12px; 
+
 
   align-items: flex-end;
   justify-content: space-between;
 
   /* outline: 1px solid white; */
 }
-.subscribe label{
+.subscribe label {
   margin-bottom: 20px;
   /* outline: 1px solid white; */
 }
-.subscribe-email{
+.subscribe-email {
   display: flex;
   flex-direction: column;
-  
+
   /* justify-content: space-between; */
 }
-.subscribe input{
+.subscribe input {
   width: 358px;
   height: 50px;
   padding-left: 16px;
-  background-color  : #2f303a;
+  background-color: #2f303a;
   /* outline: none; */
   border: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 
-  line-height: calc(20/16);
+  line-height: calc(20 / 16);
 }
-.subscribe button{
-  padding-left: 29px;
+.subscribe button {
+  padding: 27px;
   padding-top: 10px;
   padding-bottom: 10px;
   /* margin: 30px auto 0; */
   color: #fff;
   background-color: var(--accent-color);
+}
+.send {
+  margin-left: 10px;
 }
 
 /*---------------------End footer--------------*/
@@ -673,7 +679,7 @@ address {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transition: transform 500ms var(--cubic) 500ms;
+  transition: transform 250ms var(--cubic) 250ms;
 }
 
 .close-btn {
@@ -699,18 +705,18 @@ address {
 /* -------------------End BackDrop & modal*/
 
 /*------------------------- FORM -----------*/
-.form {
-  /* width: 500px; */
-  /* outline: 1px solid tomato; */
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* padding: 40px; */
-  /* padding: 20px;  */
-}
+/* .form {
+  width: 500px;
+  outline: 1px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  padding: 20px;
+} */
 
 .form h2 {
   margin-bottom: 12px;
- 
+
   font-weight: bold;
   font-size: 20px;
   line-height: calc(23 / 20);
@@ -718,6 +724,19 @@ address {
   color: #212121;
   text-align: center;
   /* outline: 1px solid black; */
+}
+.form .icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+
+  transform: translateY(-50%);
+
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  transition: fill var(--t-cubic);
+  /* background-color: tomato; */
 }
 
 .form-field {
@@ -728,11 +747,9 @@ address {
 }
 
 .form-label {
-  /* font-style: normal; */
   font-weight: normal;
   font-size: 12px;
-  line-height: CALC(14/12);
-  /* identical to box height */
+  line-height: CALC(14 / 12);
   letter-spacing: 0.01em;
 
   color: #757575;
@@ -752,27 +769,28 @@ address {
   border-radius: 3px;
   /* border-color: transparent; */
   border: 1px solid rgba(33, 33, 33, 0.2);
+
+  transition: border-color var(--t-cubic);
 }
 /* h1 {
   font-size: 12px;
   text-align: center;
 } */
+.message {
+  resize: none;
+  
+  width: 100%;
+  padding: 12px 16px;
 
-.form .icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-
-  transform: translateY(-50%);
-
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: tomato;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color var(--t-cubic);
 }
 
+
 .form-field:focus-within > .icon {
-  background-color: blue;
+  /* background-color: blue; */
+  fill:var(--accent-color);
 }
 
 .form-field:focus-within > .form-input {
@@ -789,41 +807,34 @@ address {
 .form-input:not(:placeholder-shown) + .form-label {
   transform: translateY(-50px);
 } */
-textarea {
+/* textarea {
   resize: none;
-}
-.message {
-  resize: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  /* border: 1px solid black; */
-  border-radius: 4px;
-  width: 100%;
-  padding: 12px 16px;
-}
+} */
+
 .accept {
   display: block;
   text-align: center;
-  
+
   margin-left: auto;
   margin-right: auto;
 
   /* outline: 1px solid black; */
 }
-.accept span{
+.accept span {
   font-size: 14px;
-  line-height: calc(24/14);
-  
+  line-height: calc(24 / 14);
+
   /* outline: 1px solid black; */
 }
-.accept a{
+.accept a {
   text-decoration: none;
   color: var(--accent-color);
   border-bottom: 1px solid var(--accent-color);
 }
-textarea::-webkit-input-placeholder{
-  color: rgba(117, 117, 117, 0.5);;
+textarea::-webkit-input-placeholder {
+  color: rgba(117, 117, 117, 0.5);
 }
-.form button{
+.form button {
   padding: 10px 55px;
   margin: 30px auto 0;
   color: #fff;

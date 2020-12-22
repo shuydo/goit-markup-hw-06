@@ -418,14 +418,11 @@
           <input type="email" name="subscribe" id="s-f" placeholder="E-mail">
         </div>
         
-        <button class="button">Подписаться</button>
-        <!-- <svg class="soc-icon">
-          <use href="./images/send.svg"></use>
-        </svg> -->
-        <svg class="cross" width="18" height="18">
-          <use href="./images/sprite2.svg#send"></use>
-        </svg>
-
+        <button class="button">Подписаться
+          <svg class="send" width="24" height="24">
+            <use href="./images/sprite2.svg#send"></use>
+          </svg>
+        </button>
       </div>
 
     </div>
@@ -434,10 +431,8 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="close-btn" data-modal-close>
-        <svg class="cross" width="18" height="18">
+        <svg class="cross" width="11" height="11">
           <use href="./images/sprite2.svg#c"></use>
-          <!-- <use href="./images/sprite3.svg#icon-c"></use> -->
-<!-- <use href="../"></use> -->
         </svg>
       </button>
 
@@ -448,7 +443,11 @@
           Имя
           <div class="form-field">
             <input type="text" class="form-input" name="name" placeholder=" " />
-            <span class="icon"></span>
+            <!-- <span class="icon"></span> -->
+            <!-- <svg class="icon" width="15" height="15"> -->
+            <svg class="icon">
+              <use href="./images/sprite2.svg#person"></use>
+            </svg>
           </div>
         </label>
   
@@ -456,7 +455,10 @@
           Телефон
           <div class="form-field">
             <input type="tel" class="form-input" name="phone" placeholder=" " />
-            <span class="icon"></span>
+            
+            <svg class="icon">
+                <use href="./images/sprite2.svg#fenvelop"></use>
+            </svg>
           </div>
         </label>
   
@@ -464,7 +466,9 @@
           Почта
           <div class="form-field">
             <input type="email" class="form-input" name="mail" placeholder=" " />
-            <span class="icon"></span>
+            <svg class="icon">
+              <use href="./images/sprite2.svg#phone"></use>
+            </svg>
           </div>
         </label>
   
@@ -480,11 +484,12 @@
         </label>
         
         <label class="accept">
+    <!-- class="accept-input visually-hidden"> -->
           <input             
             type="checkbox" 
             name="accept" 
             value="accept"
-            class="accept-input visually-hidden">
+            class="accept-input invisible">
           <span>
             Соглашаюсь с рассылкой и принимаю 
             <a href="#">Условия договора</a>
@@ -494,115 +499,7 @@
         <button class="button">Отправить</button>
       </form>
 
-        <!-- <div class="form-field">
-          <input class="form-input" type="text" name="name" id="name" placeholder=" "/>
-          <label class="form-label" for="name">Имя</label>
-          <span class="form-icon"></span>
-        </div>
-        <div class="form-field">
-          <input class="form-input" type="tel" name="tel" id="tel" placeholder=" "/>
-          <label class="form-label" for="tel">Телефон</label>          
-          <span class="form-icon"></span>    
-        </div>
-        <div class="form-field">          
-          <input class="form-input" type="email" name="mail" id="mail" placeholder=" "/>
-          <label class="form-label" for="mail">Почта</label>
-          <span class="form-icon"></span>
-        </div>  -->
 
-        <!-- <div class="form-field">
-          <label for="comment">Комментарий</label>
-          <textarea class="comment"
-            name="comment" 
-            id="comment"
-            rows="8"
-            placeholder="Введите текст"
-            ></textarea>
-        </div> -->
-
-       <!-- <div role="groupe" class="group">
-          <ul class="topic-options">
-            <li>
-              <label class="label">
-                <input class="checkbox"
-                  type="checkbox"
-                  name="topic" 
-                  value="html"
-                >
-                <span class="icon"></span>
-                HTML
-              </label>
-            </li>
-            <li>
-              <label class="label">
-                <input class="checkbox"
-                  type="checkbox"
-                  name="topic" 
-                  value="html"
-                >
-                <span class="icon"></span>
-                CSS
-              </label>
-            </li>
-            <li>
-              <label class="label">
-                <input class="checkbox"
-                  type="checkbox"
-                  name="topic" 
-                  value="html"
-                >
-                <span class="icon"></span>
-                JavaScript
-              </label>
-            </li>
-
-            <li>
-              <input type="checkbox" name="topic" value="css" id="css">
-              <label for="css">CSS</label>
-            </li>
-
-            <li>
-              <input type="checkbox" name="topic" value="js" id="js">
-              <label for="js">JavaScript</label>
-            </li>
-          </ul>
-        </div> -->
-
-        <!-- <div role="groupe" class="group">
-          <ul class="xp-options">
-            <li>
-              <input type="radio" name="xp" value="junior" id="junior">
-              <label for="junior">junior</label>
-            </li>
-            <li>
-              <input type="radio" name="xp" value="middle" id="middle">
-              <label for="middle">middle</label>
-            </li>
-            <li>
-              <input type="radio" name="xp" value="senior" id="senior">
-              <label for="senior">senior</label>
-            </li>
-          </ul>
-
-        </div>
-
-        <div class="form-field">
-          <label for="date">Дата доклада</label>
-          <input type="date" name="date" id="date" class="date"/>
-        </div>
-
-        <div class="form-field">
-          <label for="pdf">Load pdf</label>
-          <input type="file" name="pdf" id="pdf" />
-        </div>
-
-        
-        <div class="form-field">
-          <input type="checkbox" name="policy" id="policy">
-          <label for="policy">Соглашаюсь на всё, за еду</label>
-        </div>
-        <br />
-        <button type="submit">Отправить</button> -->
       </form>
     </div>
   </div>
