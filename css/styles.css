@@ -588,11 +588,18 @@ address {
   margin-bottom: 30px;
 }
 /* .portfolio-link:focus, */
+/* .portfolio-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+} */
+.portfolio-item:focus-within,
 .portfolio-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.portfolio-item:focus .card-thumb
+
+
+.portfolio-link:focus .portfolio-item
 /* .portfolio-item:hover */ {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -600,6 +607,7 @@ address {
 
 .portfolio-link {
   text-decoration: none;
+  outline: tomato;
 }
 .portfolio-name {
   font-weight: bold;
@@ -692,10 +700,14 @@ address {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  
+  /* text-align: center; */
+  /* vertical-align: center; */
+
+  outline: none;
 }
 .is-hidden {
   opacity: 0;
